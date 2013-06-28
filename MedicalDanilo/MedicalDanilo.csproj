@@ -86,12 +86,40 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Formularios\FrmCatalogomedicamentos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Formularios\FrmConsultorio.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Formularios\FrmMantPrecios.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Formularios\FrmPacientes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCatalogomedicamentos.xaml.cs">
+      <DependentUpon>FrmCatalogomedicamentos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmConsultorio.xaml.cs">
+      <DependentUpon>FrmConsultorio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmMantPrecios.xaml.cs">
+      <DependentUpon>FrmMantPrecios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPacientes.xaml.cs">
+      <DependentUpon>FrmPacientes.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -141,6 +169,7 @@
   <ItemGroup>
     <Resource Include="Resources\NoImage.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
