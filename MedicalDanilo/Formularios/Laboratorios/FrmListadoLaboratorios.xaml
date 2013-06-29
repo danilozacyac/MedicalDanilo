@@ -1,0 +1,87 @@
+﻿<telerik:RadWindow x:Class="MedicalDanilo.Formularios.Laboratorios.FrmListadoLaboratorios"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                   Width="940"
+                   Height="Auto"
+                   Header="Laboratorios registrados"
+                   ResizeMode="NoResize"
+                   WindowStartupLocation="CenterScreen"
+                   telerik:StyleManager.Theme="Windows8">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"
+                           MinHeight="100"
+                           MaxHeight="360" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+
+        <telerik:RadGridView Name="RgridLaboratorios"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Stretch"
+                             AutoGenerateColumns="False"
+                             FontFamily="Arial"
+                             FontSize="14"
+                             FrozenColumnsSplitterVisibility="Hidden"
+                             IsHitTestVisible="True"
+                             RowIndicatorVisibility="Visible"
+                             ShowGroupPanel="False"
+                             telerik:StyleManager.Theme="Windows8">
+            <telerik:RadGridView.Columns>
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding IdLaboratorio}"
+                                            Header="Id"
+                                            IsVisible="False" />
+                <telerik:GridViewDataColumn Width="250"
+                                            DataMemberBinding="{Binding Nombre}"
+                                            Header="Nombre" />
+                <telerik:GridViewDataColumn Width="*"
+                                            DataMemberBinding="{Binding Direccion}"
+                                            Header="Dirección"
+                                            IsFilterable="False"
+                                            IsVisible="True" />
+                <telerik:GridViewDataColumn Width="200"
+                                            DataMemberBinding="{Binding Telefono}"
+                                            Header="Telefono"
+                                            IsVisible="True" />
+
+            </telerik:RadGridView.Columns>
+
+        </telerik:RadGridView>
+
+
+        <telerik:RadButton Name="BtnAgregar"
+                           Grid.Row="1"
+                           Width="120"
+                           Height="40"
+                           Margin="5,10,0,0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top">
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock HorizontalAlignment="Center" Text="Añadir" />
+                <TextBlock Text="Laboratorio" />
+            </StackPanel>
+        </telerik:RadButton>
+
+        <telerik:RadButton Name="BtnSalir"
+                           Grid.Row="1"
+                           Width="80"
+                           Height="40"
+                           Margin="0,10,10,0"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Top"
+                           Content="Salir" />
+        <telerik:RadButton Name="BtnActualizar"
+                           Grid.Row="1"
+                           Width="120"
+                           Height="40"
+                           Margin="135,10,0,0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top">
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock HorizontalAlignment="Center" Text="Actualizar" />
+                <TextBlock Text="Laboratorio" />
+            </StackPanel>
+        </telerik:RadButton>
+
+    </Grid>
+</telerik:RadWindow>
