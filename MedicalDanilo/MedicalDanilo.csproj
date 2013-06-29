@@ -102,6 +102,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Formularios\Laboratorios\FrmRegistroLaboratorio.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -109,6 +113,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dao\CatalogoMedicamentos.cs" />
+    <Compile Include="Dao\EstadosMunicipios.cs" />
+    <Compile Include="Dao\HistorialMedicoBucal.cs" />
+    <Compile Include="Dao\Laboratorios.cs" />
+    <Compile Include="Dao\Pacientes.cs" />
+    <Compile Include="Dao\Persona.cs" />
     <Compile Include="Formularios\FrmCatalogomedicamentos.xaml.cs">
       <DependentUpon>FrmCatalogomedicamentos.xaml</DependentUpon>
     </Compile>
@@ -120,6 +130,9 @@
     </Compile>
     <Compile Include="Formularios\FrmPacientes.xaml.cs">
       <DependentUpon>FrmPacientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Laboratorios\FrmRegistroLaboratorio.xaml.cs">
+      <DependentUpon>FrmRegistroLaboratorio.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

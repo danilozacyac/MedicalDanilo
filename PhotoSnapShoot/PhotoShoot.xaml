@@ -46,25 +46,25 @@
             <Image x:Name="Configuracion" ToolTip="Configurar" />
         </StackPanel>
         <Button x:Name="BtnCapture"
-                           Grid.Row="3"
-                           Grid.RowSpan="2"
-                           Grid.Column="2"
-                           Grid.ColumnSpan="2"
-                           Width="120"
-                           Margin="10,1,137,139"
-                           Content="Tomar fotografía" />
+                Grid.Row="3"
+                Grid.RowSpan="2"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Width="120"
+                Margin="10,1,137,139"
+                Content="Tomar fotografía" />
         <Button x:Name="BtnSaveImage"
-                           Grid.Row="3"
-                           Grid.Column="3"
-                           Width="120"
-                           Margin="91,0,2,0"
-                           Content="Salvar" />
+                Grid.Row="3"
+                Grid.Column="3"
+                Width="120"
+                Margin="91,0,2,0"
+                Content="Salvar" />
         <Button Name="BtnCancelar"
-                           Grid.Row="3"
-                           Grid.RowSpan="2"
-                           Grid.Column="1"
-                           Width="120"
-                           Margin="90,2,2,138"
-                           Content="Cancelar" />
+                Grid.Row="3"
+                Grid.RowSpan="2"
+                Grid.Column="1"
+                Width="120"
+                Margin="90,2,2,138"
+                Content="Cancelar" />
     </Grid>
 </UserControl>
