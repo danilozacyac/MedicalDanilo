@@ -124,11 +124,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Dao\CatalogoMedicamentos.cs" />
-    <Compile Include="Dao\EstadosMunicipios.cs" />
-    <Compile Include="Dao\HistorialMedicoBucal.cs" />
-    <Compile Include="Dao\Laboratorios.cs" />
-    <Compile Include="Dao\OrdenLaboratorio.cs" />
     <Compile Include="Formularios\FrmCatalogomedicamentos.xaml.cs">
       <DependentUpon>FrmCatalogomedicamentos.xaml</DependentUpon>
     </Compile>

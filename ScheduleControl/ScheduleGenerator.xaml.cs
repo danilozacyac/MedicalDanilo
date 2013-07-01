@@ -23,7 +23,7 @@ namespace ScheduleControl
         public ScheduleGenerator()
         {
             InitializeComponent();
-            schedule.DataContext = new CitasCollection();
+            //schedule.DataContext = new CitasCollection();
         }
     }
 }

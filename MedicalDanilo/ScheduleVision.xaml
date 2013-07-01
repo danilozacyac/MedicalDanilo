@@ -1,12 +1,14 @@
-﻿<telerik:RadWindow
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-		xmlns:ScheduleControl="clr-namespace:ScheduleControl;assembly=ScheduleControl" x:Class="MedicalDanilo.ScheduleVision"
-		Header="ScheduleVision" Height="463" Width="678">
+﻿<telerik:RadWindow x:Class="MedicalDanilo.ScheduleVision"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:ScheduleControl="clr-namespace:ScheduleControl;assembly=ScheduleControl"
+                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                   Width="678"
+                   Height="463"
+                   Header="ScheduleVision">
     <Grid>
 
-        <ScheduleControl:ScheduleGenerator HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"/>
+        <ScheduleControl:ScheduleGenerator HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
     </Grid>
 </telerik:RadWindow>

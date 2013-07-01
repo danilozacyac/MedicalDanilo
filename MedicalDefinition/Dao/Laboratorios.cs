@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace MedicalDanilo.Dao
+namespace MedicalDefinition.Dao
 {
     public class Laboratorios
     {
