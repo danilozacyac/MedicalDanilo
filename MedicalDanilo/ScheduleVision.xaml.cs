@@ -16,15 +16,13 @@ using Telerik.Windows.Controls;
 namespace MedicalDanilo
 {
     /// <summary>
-    /// Interaction logic for MedicalDesktop.xaml
+    /// Interaction logic for ScheduleVision.xaml
     /// </summary>
-    public partial class MedicalDesktop
+    public partial class ScheduleVision
     {
-        public MedicalDesktop()
+        public ScheduleVision()
         {
             InitializeComponent();
-
-           
         }
     }
 }

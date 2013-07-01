@@ -21,7 +21,8 @@ namespace MedicalDanilo
 
         private void BtnAceptar_Click(object sender, RoutedEventArgs e)
         {
-
+            ScheduleVision vision = new ScheduleVision();
+            vision.Show();
         }
 
         private void BtnCancelar_Click(object sender, RoutedEventArgs e)

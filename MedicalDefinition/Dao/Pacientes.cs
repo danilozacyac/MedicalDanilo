@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace MedicalDanilo.Dao
+namespace MedicalDefinition.Dao
 {
     public class Pacientes : Persona
     {
@@ -9,7 +9,7 @@ namespace MedicalDanilo.Dao
         public int idDoctor;
         public DateTime fechaRegistro;
 
-        public Pacientes(int id, int edad, int sexo, string fNacimiento, string nombre, string paterno, string materno, string direccion, int estado, int municipio, string cp, string telefono, string photoPath, String mail, int idDoctor, DateTime fechaRegistro) 
+        public Pacientes(int id, int edad, int sexo, string fNacimiento, string nombre, string paterno, string materno, string direccion, int estado, int municipio, string cp, string telefono, string photoPath, String mail, int idDoctor, DateTime fechaRegistro)
             : base(id, edad, sexo, fNacimiento, nombre, paterno, materno, direccion, estado, municipio, cp, telefono, photoPath)
         {
             this.mail = mail;

@@ -235,7 +235,7 @@
                                Margin="0,0,0,0"
                                HorizontalAlignment="Left"
                                VerticalAlignment="Top"
-                               Source="/Odontologia;component/Resources/NoImage.png"
+                               Source="/MedicalDanilo;component/Resources/NoImage.png"
                                Stretch="Fill" />
                     </Border>
                 </Grid>
@@ -426,7 +426,7 @@
                            Margin="79,11,0,0"
                            HorizontalAlignment="Left"
                            VerticalAlignment="Top"
-                           Source="/OdontologiaWPF;component/Images/bw.png"
+                           Source="/MedicalDanilo;component/Resources/NoImage.png"
                            Stretch="Fill" />
                     <Image Name="imFoward"
                            Width="26"
@@ -434,7 +434,7 @@
                            Margin="0,11,485,0"
                            HorizontalAlignment="Right"
                            VerticalAlignment="Top"
-                           Source="/OdontologiaWPF;component/Images/fw.png"
+                           Source="/MedicalDanilo;component/Resources/NoImage.png"
                            Stretch="Fill" />
                     <GroupBox Name="groupBox1"
                               Width="310"

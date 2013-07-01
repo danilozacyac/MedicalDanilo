@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace MedicalDanilo.Dao
+namespace MedicalDefinition.Dao
 {
     public class Persona
     {
@@ -18,7 +18,7 @@ namespace MedicalDanilo.Dao
         private string cp;
         private string telefono;
         private string photoPath = @"C:\Users\Luis\Documents\12.jpg";
-        
+
         public Persona(int id, int edad, int sexo, string fNacimiento, string nombre, string paterno, string materno, string direccion, int estado, int municipio, string cp, string telefono, string photoPath)
         {
             this.id = id;
