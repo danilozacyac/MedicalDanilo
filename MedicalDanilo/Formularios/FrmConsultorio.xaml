@@ -7,7 +7,7 @@
                    Header="Información del Consultorio"
                    ResizeMode="NoResize"
                    WindowStartupLocation="CenterScreen"
-                   telerik:StyleManager.Theme="Windows8">
+                   telerik:StyleManager.Theme="Windows8" Loaded="RadWindow_Loaded">
     <Grid>
         <TextBox Name="txtNomClinica"
                  Width="457"
@@ -68,12 +68,15 @@
                    VerticalAlignment="Top"
                    Foreground="Black"
                    Text="Estado:" />
-        <telerik:RadComboBox Name="ComEstado"
+        <telerik:RadComboBox x:Name="RcbxEstado"
                              Width="200"
                              Height="23"
                              Margin="355,124,0,0"
+                             ItemsSource="{Binding}"
+                             DisplayMemberPath="NombreEdoMun"
+                             SelectedValuePath="IdEstado"
                              HorizontalAlignment="Left"
-                             VerticalAlignment="Top" />
+                             VerticalAlignment="Top" SelectionChanged="RcbxEstado_SelectionChanged" />
         <TextBlock Name="textBlock7"
                    Width="50"
                    Height="23"
@@ -82,10 +85,13 @@
                    VerticalAlignment="Top"
                    Foreground="Black"
                    Text="Ciudad: " />
-        <telerik:RadComboBox Name="ComCiudad"
+        <telerik:RadComboBox x:Name="RcbxMunicipio"
                              Width="200"
                              Height="23"
                              Margin="355,160,0,0"
+                             ItemsSource="{Binding}"
+                             DisplayMemberPath="NombreEdoMun"
+                             SelectedValuePath="IdMunicipio"
                              HorizontalAlignment="Left"
                              VerticalAlignment="Top" />
         <TextBlock Name="textBlock8"

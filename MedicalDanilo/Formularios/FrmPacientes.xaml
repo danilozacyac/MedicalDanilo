@@ -141,6 +141,7 @@
                              VerticalAlignment="Top"
                              Text="{Binding Path=Direccion,
                                             Mode=TwoWay}" />
+                    
                     <telerik:RadDatePicker Name="dtPick"
                                            Width="150"
                                            Margin="406,47,0,0"

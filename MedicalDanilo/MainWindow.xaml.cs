@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Windows;
+using MedicalDanilo.Formularios;
 
 namespace MedicalDanilo
 {
@@ -21,7 +22,7 @@ namespace MedicalDanilo
 
         private void BtnAceptar_Click(object sender, RoutedEventArgs e)
         {
-            ScheduleVision vision = new ScheduleVision();
+            FrmConsultorio vision = new FrmConsultorio();
             vision.Show();
         }
 

@@ -89,7 +89,7 @@
                              Margin="115,42,0,0"
                              HorizontalAlignment="Left"
                              VerticalAlignment="Top" />
-        <telerik:RadDatePicker Name="DpEnvio"
+        <!--<telerik:RadDatePicker Name="DpEnvio"
                                Grid.Row="1"
                                Width="169"
                                Height="25"
@@ -102,7 +102,7 @@
                                Height="25"
                                Margin="115,202,0,0"
                                HorizontalAlignment="Left"
-                               VerticalAlignment="Top" />
+                               VerticalAlignment="Top" />-->
         <TextBox Name="TxtImporte"
                  Grid.Row="1"
                  Width="169"

@@ -10,7 +10,7 @@ namespace MedicalDefinition.Utilities
 
         public static SqlConnection GetConnection()
         {
-            String bdStringSql = "Data Source=CTDIR-26464-CBG;Initial Catalog=inventario;Integrated Security=True";
+            String bdStringSql = @"Data Source=LUIS-PC\SQLEXPRESS;Initial Catalog=MedicalDanilo;Integrated Security=True";
 
             SqlConnection connection = new SqlConnection(bdStringSql);
 

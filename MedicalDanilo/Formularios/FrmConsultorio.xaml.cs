@@ -10,7 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using MedicalDefinition.Singletons;
 using Telerik.Windows.Controls;
 
 namespace MedicalDanilo.Formularios
@@ -23,6 +23,16 @@ namespace MedicalDanilo.Formularios
         public FrmConsultorio()
         {
             InitializeComponent();
+        }
+
+        private void RadWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            RcbxEstado.DataContext = EstadosMunicipiosSingleton.Estados;
+        }
+
+        private void RcbxEstado_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            RcbxMunicipio.DataContext = EstadosMunicipiosSingleton.Municipios(Convert.ToInt16(RcbxEstado.SelectedValue));
         }
     }
 }
